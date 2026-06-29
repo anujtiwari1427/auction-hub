@@ -158,7 +158,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-text-muted">
-            © {new Date().getFullYear()} AuctionHub AI. All rights reserved.
+            © {new Date().getFullYear()} AuctionHub AI. All rights reserved. Created by Anuj Tiwari.
           </p>
           <div className="flex items-center gap-4">
             {[Globe, MessageCircle, Camera, Briefcase, Play].map((Icon, i) => (

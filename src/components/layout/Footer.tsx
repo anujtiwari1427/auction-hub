@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Building2,
   Mail,
@@ -90,14 +91,14 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
-                <Building2 className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <span className="font-display text-lg font-bold text-text-primary">AuctionHub</span>
-                <span className="block text-[10px] font-medium tracking-widest uppercase text-primary-light">AI Platform</span>
-              </div>
+            <Link href="/" className="flex items-center mb-4">
+              <Image 
+                src="/logo.png" 
+                alt="Auction-Hub" 
+                width={200} 
+                height={50} 
+                className="h-12 w-auto object-contain" 
+              />
             </Link>
             <p className="text-sm text-text-secondary mb-4 max-w-xs">
               India&apos;s first AI-powered bank auction property marketplace. Making real estate investment simple, transparent, and accessible.

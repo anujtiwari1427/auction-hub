@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Search,
   Menu,
@@ -50,19 +51,15 @@ export function Navbar() {
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 lg:h-18">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 shrink-0">
-              <div className="relative w-9 h-9 rounded-xl gradient-primary flex items-center justify-center shadow-lg shadow-primary/30">
-                <Building2 className="w-5 h-5 text-white" />
-                <div className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-accent animate-pulse" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display text-lg font-bold tracking-tight text-text-primary leading-none">
-                  AuctionHub
-                </span>
-                <span className="text-[10px] font-medium tracking-widest uppercase text-primary-light leading-none">
-                  AI Platform
-                </span>
-              </div>
+            <Link href="/" className="flex items-center shrink-0">
+              <Image 
+                src="/logo.png" 
+                alt="Auction-Hub" 
+                width={200} 
+                height={50} 
+                className="h-10 w-auto object-contain" 
+                priority 
+              />
             </Link>
 
             {/* Desktop Navigation */}

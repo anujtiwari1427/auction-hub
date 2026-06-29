@@ -8,54 +8,124 @@
 /* ============================================ */
 /* Theme Tokens                                 */
 /* ============================================ */
-@theme inline {
+/* Light Mode — CSS Variable Defaults           */
+/* ============================================ */
+:root {
   /* Primary Palette */
-  --color-primary: #2563eb;
-  --color-primary-light: #3b82f6;
-  --color-primary-dark: #1d4ed8;
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-900: #1e3a5f;
+  --theme-primary: #2563eb;
+  --theme-primary-light: #3b82f6;
+  --theme-primary-dark: #1d4ed8;
+  --theme-primary-50: #eff6ff;
+  --theme-primary-100: #dbeafe;
+  --theme-primary-200: #bfdbfe;
+  --theme-primary-900: #1e3a5f;
 
   /* Accent */
-  --color-accent: #f59e0b;
-  --color-accent-light: #fbbf24;
-  --color-accent-dark: #d97706;
+  --theme-accent: #f59e0b;
+  --theme-accent-light: #fbbf24;
+  --theme-accent-dark: #d97706;
 
-  /* Success / Emerald */
-  --color-success: #10b981;
-  --color-success-light: #34d399;
-  --color-success-dark: #059669;
+  /* Success */
+  --theme-success: #10b981;
+  --theme-success-light: #34d399;
+  --theme-success-dark: #059669;
 
   /* Danger */
-  --color-danger: #ef4444;
-  --color-danger-light: #f87171;
+  --theme-danger: #ef4444;
+  --theme-danger-light: #f87171;
 
   /* Backgrounds */
-  --color-bg-primary: #030712;
-  --color-bg-secondary: #0a1628;
-  --color-bg-card: #111827;
-  --color-bg-card-hover: #1f2937;
-  --color-bg-elevated: #1e293b;
-  --color-bg-glass: rgba(17, 24, 39, 0.7);
+  --theme-bg-primary: #f8fafc;
+  --theme-bg-secondary: #f1f5f9;
+  --theme-bg-card: #ffffff;
+  --theme-bg-card-hover: #f8fafc;
+  --theme-bg-elevated: #ffffff;
+  --theme-bg-glass: rgba(255, 255, 255, 0.8);
 
   /* Text */
-  --color-text-primary: #f1f5f9;
-  --color-text-secondary: #94a3b8;
-  --color-text-muted: #64748b;
+  --theme-text-primary: #0f172a;
+  --theme-text-secondary: #475569;
+  --theme-text-muted: #64748b;
 
   /* Borders */
-  --color-border: #1e293b;
-  --color-border-light: #334155;
+  --theme-border: #e2e8f0;
+  --theme-border-light: #cbd5e1;
+
+  /* Gradients */
+  --theme-gradient-start: #e0e7ff;
+  --theme-gradient-end: #f8fafc;
+}
+
+/* ============================================ */
+/* Night Mode — Complete Black Theme            */
+/* ============================================ */
+.dark {
+  --theme-primary: #3b82f6;
+  --theme-primary-light: #60a5fa;
+  --theme-primary-dark: #2563eb;
+  --theme-primary-50: #0a1220;
+  --theme-primary-100: #0e1a2e;
+  --theme-primary-200: #132240;
+  --theme-primary-900: #1e3a5f;
+  --theme-accent: #f59e0b;
+  --theme-accent-light: #fbbf24;
+  --theme-accent-dark: #d97706;
+  --theme-success: #10b981;
+  --theme-success-light: #34d399;
+  --theme-success-dark: #059669;
+  --theme-danger: #ef4444;
+  --theme-danger-light: #f87171;
+  --theme-bg-primary: #000000;
+  --theme-bg-secondary: #0a0a0a;
+  --theme-bg-card: #161616;
+  --theme-bg-card-hover: #1c1c1c;
+  --theme-bg-elevated: #161616;
+  --theme-bg-glass: rgba(0, 0, 0, 0.95);
+  --theme-text-primary: #ffffff;
+  --theme-text-secondary: #a1a1aa;
+  --theme-text-muted: #71717a;
+  --theme-border: #2a2a2a;
+  --theme-border-light: #333333;
+  --theme-gradient-start: #0a0a0a;
+  --theme-gradient-end: #000000;
+}
+
+/* ============================================ */
+/* Theme Tokens (Tailwind v4)                   */
+/* ============================================ */
+@theme inline {
+  --color-primary: var(--theme-primary);
+  --color-primary-light: var(--theme-primary-light);
+  --color-primary-dark: var(--theme-primary-dark);
+  --color-primary-50: var(--theme-primary-50);
+  --color-primary-100: var(--theme-primary-100);
+  --color-primary-200: var(--theme-primary-200);
+  --color-primary-900: var(--theme-primary-900);
+  --color-accent: var(--theme-accent);
+  --color-accent-light: var(--theme-accent-light);
+  --color-accent-dark: var(--theme-accent-dark);
+  --color-success: var(--theme-success);
+  --color-success-light: var(--theme-success-light);
+  --color-success-dark: var(--theme-success-dark);
+  --color-danger: var(--theme-danger);
+  --color-danger-light: var(--theme-danger-light);
+  --color-bg-primary: var(--theme-bg-primary);
+  --color-bg-secondary: var(--theme-bg-secondary);
+  --color-bg-card: var(--theme-bg-card);
+  --color-bg-card-hover: var(--theme-bg-card-hover);
+  --color-bg-elevated: var(--theme-bg-elevated);
+  --color-bg-glass: var(--theme-bg-glass);
+  --color-text-primary: var(--theme-text-primary);
+  --color-text-secondary: var(--theme-text-secondary);
+  --color-text-muted: var(--theme-text-muted);
+  --color-border: var(--theme-border);
+  --color-border-light: var(--theme-border-light);
+  --color-gradient-start: var(--theme-gradient-start);
+  --color-gradient-end: var(--theme-gradient-end);
 
   /* Fonts */
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
-
-  /* Gradients */
-  --color-gradient-start: #1e3a5f;
-  --color-gradient-end: #030712;
 }
 
 /* ============================================ */
@@ -64,6 +134,10 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: #334155 transparent;
+}
+
+.dark * {
+  scrollbar-color: #1a1a1a transparent;
 }
 
 *::-webkit-scrollbar {
@@ -80,6 +154,10 @@
   border-radius: 3px;
 }
 
+.dark *::-webkit-scrollbar-thumb {
+  background-color: #262626;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -90,61 +168,109 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
-  background: rgba(37, 99, 235, 0.3);
-  color: #f1f5f9;
+  background: rgba(37, 99, 235, 0.2);
+  color: #0f172a;
+}
+
+.dark ::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: #fafafa;
 }
 
 /* ============================================ */
-/* Claymorphism                                 */
+/* Claymorphism — Light Mode                    */
 /* ============================================ */
 .clay-panel {
-  background: #0f172a;
+  background: #f1f5f9;
   border-radius: 24px;
   box-shadow: 
-    8px 8px 16px rgba(0, 0, 0, 0.4),
-    -8px -8px 16px rgba(255, 255, 255, 0.03),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.05),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.03);
+    10px 10px 20px rgba(148, 163, 184, 0.25),
+    -10px -10px 20px rgba(255, 255, 255, 0.8),
+    inset 2px 2px 5px rgba(255, 255, 255, 1),
+    inset -2px -2px 5px rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .clay-light {
-  background: #1e293b;
+  background: #ffffff;
   border-radius: 20px;
   box-shadow: 
-    6px 6px 12px rgba(0, 0, 0, 0.3),
-    -6px -6px 12px rgba(255, 255, 255, 0.02),
-    inset 1px 1px 3px rgba(255, 255, 255, 0.04),
-    inset -1px -1px 3px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.02);
+    8px 8px 16px rgba(148, 163, 184, 0.2),
+    -8px -8px 16px rgba(255, 255, 255, 1),
+    inset 1px 1px 3px rgba(255, 255, 255, 1),
+    inset -1px -1px 3px rgba(148, 163, 184, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .clay-card {
-  background: #111827;
+  background: #ffffff;
   border-radius: 24px;
   box-shadow: 
-    10px 10px 20px rgba(0, 0, 0, 0.5),
-    -4px -4px 12px rgba(255, 255, 255, 0.02),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.05),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.02);
+    12px 12px 24px rgba(148, 163, 184, 0.25),
+    -8px -8px 16px rgba(255, 255, 255, 1),
+    inset 2px 2px 5px rgba(255, 255, 255, 1),
+    inset -2px -2px 5px rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clay-card:hover {
   transform: translateY(-4px);
   box-shadow: 
-    14px 14px 28px rgba(0, 0, 0, 0.6),
-    -6px -6px 16px rgba(255, 255, 255, 0.03),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.06),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.35);
+    16px 16px 32px rgba(148, 163, 184, 0.3),
+    -10px -10px 20px rgba(255, 255, 255, 1),
+    inset 2px 2px 5px rgba(255, 255, 255, 1),
+    inset -2px -2px 5px rgba(148, 163, 184, 0.15);
 }
 
 /* ============================================ */
-/* Gradients                                    */
+/* Claymorphism — Night Mode (AMOLED + Grey)    */
+/* ============================================ */
+.dark .clay-panel {
+  background: #141414;
+  box-shadow: 
+    8px 8px 16px rgba(0, 0, 0, 0.9),
+    -4px -4px 8px rgba(255, 255, 255, 0.02),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.04),
+    inset -1px -1px 3px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark .clay-light {
+  background: #1a1a1a;
+  box-shadow: 
+    6px 6px 12px rgba(0, 0, 0, 0.8),
+    -3px -3px 6px rgba(255, 255, 255, 0.015),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.04),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dark .clay-card {
+  background: #161616;
+  box-shadow: 
+    10px 10px 20px rgba(0, 0, 0, 0.9),
+    -4px -4px 10px rgba(255, 255, 255, 0.02),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.04),
+    inset -1px -1px 3px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.dark .clay-card:hover {
+  box-shadow: 
+    14px 14px 28px rgba(0, 0, 0, 1),
+    -6px -6px 14px rgba(255, 255, 255, 0.03),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.05),
+    inset -1px -1px 3px rgba(0, 0, 0, 0.5);
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+/* ============================================ */
+/* Gradients — Light Mode                       */
 /* ============================================ */
 .gradient-primary {
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e3a5f 100%);
@@ -157,11 +283,9 @@ body {
 .gradient-hero {
   background: linear-gradient(
     180deg,
-    #030712 0%,
-    #0a1628 20%,
-    #111827 40%,
-    #0f172a 60%,
-    #030712 100%
+    #f8fafc 0%,
+    #f1f5f9 40%,
+    #ffffff 100%
   );
 }
 
@@ -187,6 +311,30 @@ body {
 }
 
 /* ============================================ */
+/* Gradients — Night Mode (Pure Black)          */
+/* ============================================ */
+.dark .gradient-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+}
+
+.dark .gradient-hero {
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    #050505 40%,
+    #0a0a0a 70%,
+    #000000 100%
+  );
+}
+
+.dark .gradient-text {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================ */
 /* Mesh Background                              */
 /* ============================================ */
 .mesh-bg {
@@ -204,6 +352,13 @@ body {
     radial-gradient(ellipse at 40% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
+}
+
+.dark .mesh-bg::before {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(99, 102, 241, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 40% 80%, rgba(139, 92, 246, 0.03) 0%, transparent 50%);
 }
 
 /* ============================================ */

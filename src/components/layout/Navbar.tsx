@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import {
   Search,
   Menu,
@@ -19,6 +20,7 @@ import {
   Bell,
   User,
   Heart,
+  PlusCircle,
 } from 'lucide-react';
 
 const navLinks = [
@@ -85,6 +87,8 @@ export function Navbar() {
 
             {/* Right Actions */}
             <div className="flex items-center gap-2">
+              <ThemeToggle />
+
               <button
                 className="hidden md:flex items-center gap-2 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all"
                 aria-label="Search"
@@ -107,6 +111,13 @@ export function Navbar() {
                 <Heart className="w-4 h-4" />
               </button>
 
+              <Link
+                href="/list-property"
+                className="hidden md:flex items-center gap-2 px-4 py-2 rounded-xl clay-panel text-sm font-semibold hover-lift"
+              >
+                <PlusCircle className="w-4 h-4 text-primary" />
+                List Property
+              </Link>
               <Link
                 href="/dashboard"
                 className="hidden md:flex items-center gap-2 px-4 py-2 rounded-xl gradient-primary text-white text-sm font-semibold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all duration-300 hover:scale-[1.02]"
@@ -161,6 +172,14 @@ export function Navbar() {
               </nav>
 
               <div className="mt-auto space-y-3">
+                <Link
+                  href="/list-property"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl clay-panel text-text-primary text-sm font-semibold shadow-lg shadow-black/10"
+                >
+                  <PlusCircle className="w-4 h-4 text-primary" />
+                  List Property
+                </Link>
                 <Link
                   href="/dashboard"
                   onClick={() => setMobileOpen(false)}

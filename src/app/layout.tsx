@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SiaChat } from "@/components/features/SiaChat";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -62,13 +63,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${plusJakarta.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg-primary text-text-primary">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <SiaChat />
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <SiaChat />
+        </ThemeProvider>
       </body>
     </html>
   );

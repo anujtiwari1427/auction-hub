@@ -35,7 +35,7 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-bg-primary">
       <div className="container-custom py-8">
         {/* Welcome */}
-        <div className="glass-card rounded-2xl p-6 lg:p-8 mb-8">
+        <div className="clay-card rounded-2xl p-6 lg:p-8 mb-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 rounded-2xl gradient-primary flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-primary/30">
@@ -103,7 +103,7 @@ export default function DashboardPage() {
         {activeTab === 'auctions' && (
           <div className="space-y-4 animate-fade-in">
             {liveAuctions.map((p) => (
-              <Link key={p.id} href={`/properties/${p.id}`} className="block glass-card rounded-xl p-5 hover:border-primary/30 transition-all">
+              <Link key={p.id} href={`/properties/${p.id}`} className="block clay-card rounded-xl p-5 hover:border-primary/30 transition-all">
                 <div className="flex items-center gap-4">
                   <div className="w-20 h-20 rounded-xl bg-cover bg-center shrink-0" style={{ backgroundImage: `url(${p.thumbnail})` }} />
                   <div className="flex-1 min-w-0">
@@ -127,7 +127,7 @@ export default function DashboardPage() {
         )}
 
         {activeTab === 'visits' && (
-          <div className="glass-card rounded-2xl p-8 text-center animate-fade-in">
+          <div className="clay-card rounded-2xl p-8 text-center animate-fade-in">
             <Eye className="w-12 h-12 text-text-muted mx-auto mb-4" />
             <h3 className="text-lg font-display font-bold text-text-primary mb-2">No Site Visits Scheduled</h3>
             <p className="text-text-secondary mb-6">Book a site visit from any property page to see it here.</p>
@@ -140,7 +140,7 @@ export default function DashboardPage() {
         {activeTab === 'notifications' && (
           <div className="space-y-3 animate-fade-in">
             {notifications.map((n) => (
-              <div key={n.id} className="glass-card rounded-xl p-4 flex items-start gap-3 hover:border-primary/30 transition-all">
+              <div key={n.id} className="clay-card rounded-xl p-4 flex items-start gap-3 hover:border-primary/30 transition-all">
                 <div className={cn(
                   'w-10 h-10 rounded-xl flex items-center justify-center shrink-0',
                   n.type === 'urgent' ? 'bg-red-500/10 text-red-400' :

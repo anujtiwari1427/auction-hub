@@ -107,7 +107,7 @@ export default function AISearchPage() {
         </div>
 
         {/* Chat Area */}
-        <div className="glass-card rounded-2xl overflow-hidden">
+        <div className="clay-card rounded-2xl overflow-hidden">
           <div className="p-6 space-y-6 max-h-[60vh] overflow-y-auto no-scrollbar">
             {messages.map((msg) => (
               <div key={msg.id} className={cn('flex gap-3', msg.role === 'user' ? 'flex-row-reverse' : '')}>

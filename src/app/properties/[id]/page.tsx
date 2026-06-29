@@ -179,7 +179,7 @@ export default function PropertyDetailPage({ params }: { params: Promise<{ id: s
             {activeTab === 'overview' && (
               <div className="space-y-6 animate-fade-in">
                 {/* Details Grid */}
-                <div className="glass-card rounded-2xl p-6">
+                <div className="clay-card rounded-2xl p-6">
                   <h3 className="font-display font-bold text-text-primary mb-4">Property Details</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     <DetailItem icon={Home} label="Type" value={`${property.subType} ${property.propertyType}`} />
@@ -199,7 +199,7 @@ export default function PropertyDetailPage({ params }: { params: Promise<{ id: s
                 </div>
 
                 {/* AI Summary */}
-                <div className="glass-card rounded-2xl p-6">
+                <div className="clay-card rounded-2xl p-6">
                   <h3 className="font-display font-bold text-text-primary mb-3 flex items-center gap-2">
                     <Sparkles className="w-5 h-5 text-accent" />
                     AI Analysis
@@ -208,13 +208,13 @@ export default function PropertyDetailPage({ params }: { params: Promise<{ id: s
                 </div>
 
                 {/* Description */}
-                <div className="glass-card rounded-2xl p-6">
+                <div className="clay-card rounded-2xl p-6">
                   <h3 className="font-display font-bold text-text-primary mb-3">Description</h3>
                   <p className="text-sm text-text-secondary leading-relaxed">{property.description}</p>
                 </div>
 
                 {/* Nearby */}
-                <div className="glass-card rounded-2xl p-6">
+                <div className="clay-card rounded-2xl p-6">
                   <h3 className="font-display font-bold text-text-primary mb-4">Nearby Amenities</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {property.nearbyAmenities.map((a) => {
@@ -240,7 +240,7 @@ export default function PropertyDetailPage({ params }: { params: Promise<{ id: s
             {activeTab === 'investment' && (
               <div className="space-y-6 animate-fade-in">
                 <InvestmentScoreCard score={property.investmentScore} />
-                <div className="glass-card rounded-2xl p-6">
+                <div className="clay-card rounded-2xl p-6">
                   <h3 className="font-display font-bold text-text-primary mb-4">Returns Analysis</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     <DetailItem icon={TrendingUp} label="Expected ROI" value={`${property.expectedROI}% / year`} />
@@ -256,7 +256,7 @@ export default function PropertyDetailPage({ params }: { params: Promise<{ id: s
 
             {activeTab === 'legal' && (
               <div className="space-y-6 animate-fade-in">
-                <div className="glass-card rounded-2xl p-6">
+                <div className="clay-card rounded-2xl p-6">
                   <h3 className="font-display font-bold text-text-primary mb-4 flex items-center gap-2">
                     <Shield className="w-5 h-5 text-emerald-400" />
                     Legal Status
@@ -309,7 +309,7 @@ export default function PropertyDetailPage({ params }: { params: Promise<{ id: s
           {/* Sidebar */}
           <div className="space-y-5">
             {/* Price Card */}
-            <div className="glass-card rounded-2xl p-6 sticky top-20">
+            <div className="clay-card rounded-2xl p-6 sticky top-20">
               <div className="space-y-4">
                 <div>
                   <p className="text-xs text-text-muted mb-1">Auction Price</p>

@@ -29,7 +29,7 @@ export function EMICalculator({ defaultAmount = 5000000, compact = false }: EMIC
   const principalPercent = Math.round((loanAmount / totalPayment) * 100);
 
   return (
-    <div className={cn('glass-card rounded-2xl', compact ? 'p-4' : 'p-6 lg:p-8')}>
+    <div className={cn('clay-card rounded-2xl', compact ? 'p-4' : 'p-6 lg:p-8')}>
       <h3 className="font-display font-bold text-text-primary flex items-center gap-2 mb-6">
         <Calculator className="w-5 h-5 text-primary-light" />
         EMI Calculator

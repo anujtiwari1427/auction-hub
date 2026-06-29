@@ -89,7 +89,7 @@ export function SearchBar({ variant = 'hero', className }: SearchBarProps) {
 
       {/* Search Input */}
       <div className="relative">
-        <div className="glass rounded-2xl p-1.5 shadow-2xl shadow-black/30">
+        <div className="clay-panel rounded-2xl p-1.5 shadow-2xl shadow-black/30">
           <div className="flex items-center gap-3 bg-bg-secondary rounded-xl px-5 py-4">
             {isAIMode ? (
               <Sparkles className="w-5 h-5 text-accent shrink-0 animate-pulse" />
@@ -132,7 +132,7 @@ export function SearchBar({ variant = 'hero', className }: SearchBarProps) {
 
         {/* Suggestions Dropdown */}
         {showSuggestions && (
-          <div className="absolute top-full left-0 right-0 mt-2 glass rounded-xl overflow-hidden z-20 p-2">
+          <div className="absolute top-full left-0 right-0 mt-2 clay-panel rounded-xl overflow-hidden z-20 p-2">
             <p className="px-3 py-1.5 text-xs text-text-muted font-medium">
               {isAIMode ? '✨ Try asking SIA:' : '🔍 Popular searches:'}
             </p>

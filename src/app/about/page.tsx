@@ -29,7 +29,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="mesh-bg relative py-20 lg:py-28">
         <div className="relative z-10 container-custom text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-text-secondary mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full clay-panel text-sm text-text-secondary mb-6">
             <Building2 className="w-4 h-4 text-primary-light" />
             About AuctionHub AI
           </div>
@@ -46,7 +46,7 @@ export default function AboutPage() {
       {/* Mission */}
       <section className="py-16 lg:py-20 bg-bg-secondary">
         <div className="container-custom">
-          <div className="glass-card rounded-2xl p-8 lg:p-12 text-center max-w-4xl mx-auto">
+          <div className="clay-card rounded-2xl p-8 lg:p-12 text-center max-w-4xl mx-auto">
             <Sparkles className="w-10 h-10 text-accent mx-auto mb-4" />
             <h2 className="text-2xl lg:text-3xl font-display font-bold text-text-primary mb-4">Our Mission</h2>
             <blockquote className="text-xl lg:text-2xl text-text-secondary italic leading-relaxed">
@@ -62,7 +62,7 @@ export default function AboutPage() {
           <h2 className="text-2xl lg:text-3xl font-display font-bold text-text-primary text-center mb-12">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v) => (
-              <div key={v.title} className="glass-card rounded-2xl p-6 text-center hover-lift">
+              <div key={v.title} className="clay-card rounded-2xl p-6 text-center hover-lift">
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <v.icon className="w-6 h-6 text-primary-light" />
                 </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
               { value: '15,000+', label: 'Happy Customers' },
               { value: '8', label: 'Cities & Growing' },
             ].map((s) => (
-              <div key={s.label} className="glass-card rounded-2xl p-6 text-center">
+              <div key={s.label} className="clay-card rounded-2xl p-6 text-center">
                 <p className="text-3xl lg:text-4xl font-display font-bold gradient-text">{s.value}</p>
                 <p className="text-sm text-text-muted mt-2">{s.label}</p>
               </div>

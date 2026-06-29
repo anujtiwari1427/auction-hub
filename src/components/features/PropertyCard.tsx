@@ -54,7 +54,7 @@ export function PropertyCard({ property, variant = 'default' }: PropertyCardProp
   if (variant === 'compact') {
     return (
       <Link href={`/properties/${property.id}`} className="block group">
-        <div className="glass-card rounded-xl overflow-hidden flex gap-4 p-3">
+        <div className="clay-card rounded-xl overflow-hidden flex gap-4 p-3">
           <div className="relative w-28 h-28 rounded-lg overflow-hidden shrink-0">
             <div
               className="w-full h-full bg-cover bg-center"
@@ -91,7 +91,7 @@ export function PropertyCard({ property, variant = 'default' }: PropertyCardProp
 
   return (
     <Link href={`/properties/${property.id}`} className="block group">
-      <div className="glass-card rounded-2xl overflow-hidden hover-lift">
+      <div className="clay-card rounded-2xl overflow-hidden hover-lift">
         {/* Image Section */}
         <div className="relative aspect-[16/10] overflow-hidden">
           {/* Image */}

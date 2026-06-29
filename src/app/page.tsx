@@ -134,7 +134,7 @@ export default function HomePage() {
 
         <div className="relative z-10 container-custom py-20 lg:py-32 text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full clay-panel mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium text-text-secondary">
               India&apos;s First AI-Powered Property Auction Platform
@@ -162,7 +162,7 @@ export default function HomePage() {
           {/* Stats */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mt-16 max-w-4xl mx-auto animate-fade-in-up stagger-4">
             {stats.map((stat) => (
-              <div key={stat.label} className="glass-card rounded-xl p-4 lg:p-5 text-center">
+              <div key={stat.label} className="clay-card rounded-xl p-4 lg:p-5 text-center">
                 <stat.icon className="w-6 h-6 text-primary-light mx-auto mb-2" />
                 <AnimatedCounter target={stat.value} />
                 <p className="text-xs text-text-muted mt-1">{stat.label}</p>
@@ -218,7 +218,7 @@ export default function HomePage() {
               <Link
                 key={cat.label}
                 href={cat.href}
-                className="group glass-card rounded-2xl p-6 lg:p-8 text-center hover-lift"
+                className="group clay-card rounded-2xl p-6 lg:p-8 text-center hover-lift"
               >
                 <div className={cn(
                   'w-16 h-16 rounded-2xl bg-gradient-to-br flex items-center justify-center mx-auto mb-4 transition-transform group-hover:scale-110',
@@ -279,7 +279,7 @@ export default function HomePage() {
             {aiFeatures.map((feature) => (
               <div
                 key={feature.title}
-                className="glass-card rounded-2xl p-6 hover-lift group"
+                className="clay-card rounded-2xl p-6 hover-lift group"
               >
                 <div className={cn('w-12 h-12 rounded-xl flex items-center justify-center mb-4', feature.color)}>
                   <feature.icon className="w-6 h-6" />
@@ -343,7 +343,7 @@ export default function HomePage() {
                 {i < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-10 left-[60%] w-[80%] h-px bg-gradient-to-r from-border to-transparent" />
                 )}
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl glass-card mb-5 group-hover:border-primary/40 transition-all">
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl clay-card mb-5 group-hover:border-primary/40 transition-all">
                   <step.icon className="w-8 h-8 text-primary-light" />
                 </div>
                 <span className="text-xs font-bold text-primary-light uppercase tracking-widest block mb-2">
@@ -387,7 +387,7 @@ export default function HomePage() {
             {banks.map((bank) => (
               <div
                 key={bank.id}
-                className="glass-card rounded-xl p-5 text-center hover-lift cursor-pointer"
+                className="clay-card rounded-xl p-5 text-center hover-lift cursor-pointer"
               >
                 <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mx-auto mb-3">
                   <Landmark className="w-6 h-6 text-primary-light" />
@@ -411,7 +411,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {testimonials.map((t) => (
-              <div key={t.id} className="glass-card rounded-2xl p-6 hover-lift">
+              <div key={t.id} className="clay-card rounded-2xl p-6 hover-lift">
                 <div className="flex items-center gap-1 mb-4">
                   {Array.from({ length: 5 }, (_, i) => (
                     <Star

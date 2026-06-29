@@ -74,7 +74,7 @@ export default function InvestmentAdvisorPage() {
         </div>
 
         {/* Input Panel */}
-        <div className="glass-card rounded-2xl p-8 max-w-3xl mx-auto mb-12">
+        <div className="clay-card rounded-2xl p-8 max-w-3xl mx-auto mb-12">
           <div className="space-y-8">
             {/* Budget */}
             <div>
@@ -173,7 +173,7 @@ export default function InvestmentAdvisorPage() {
 
             {/* Top pick highlight */}
             {recommendations[0] && (
-              <div className="glass-card rounded-2xl p-6 mb-8 border-accent/30 border">
+              <div className="clay-card rounded-2xl p-6 mb-8 border-accent/30 border">
                 <div className="flex items-center gap-2 mb-4">
                   <Zap className="w-5 h-5 text-accent" />
                   <span className="text-sm font-bold text-accent">AI Top Pick</span>

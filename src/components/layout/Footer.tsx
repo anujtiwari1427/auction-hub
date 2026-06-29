@@ -54,7 +54,7 @@ export function Footer() {
     <footer className="relative bg-bg-secondary border-t border-border">
       {/* Newsletter Section */}
       <div className="container-custom py-12 lg:py-16">
-        <div className="glass-card rounded-2xl p-8 lg:p-12 mb-16">
+        <div className="clay-card rounded-2xl p-8 lg:p-12 mb-16">
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="flex-1 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary-light text-sm font-medium mb-4">

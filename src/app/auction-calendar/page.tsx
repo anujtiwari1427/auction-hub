@@ -62,7 +62,7 @@ export default function AuctionCalendarPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Calendar */}
           <div className="lg:col-span-2">
-            <div className="glass-card rounded-2xl p-6">
+            <div className="clay-card rounded-2xl p-6">
               {/* Month navigation */}
               <div className="flex items-center justify-between mb-6">
                 <button onClick={prevMonth} className="w-10 h-10 rounded-lg bg-bg-primary border border-border flex items-center justify-center text-text-muted hover:text-text-primary transition-all">
@@ -128,7 +128,7 @@ export default function AuctionCalendarPage() {
                   {selectedAuctions.length} auction{selectedAuctions.length > 1 ? 's' : ''} on this date
                 </h3>
                 {selectedAuctions.map((p) => (
-                  <Link key={p.id} href={`/properties/${p.id}`} className="block glass-card rounded-xl p-4 hover:border-primary/30 transition-all">
+                  <Link key={p.id} href={`/properties/${p.id}`} className="block clay-card rounded-xl p-4 hover:border-primary/30 transition-all">
                     <div className="flex items-center gap-4">
                       <div className="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style={{ backgroundImage: `url(${p.thumbnail})` }} />
                       <div className="flex-1 min-w-0">
@@ -150,7 +150,7 @@ export default function AuctionCalendarPage() {
 
           {/* Upcoming List */}
           <div>
-            <div className="glass-card rounded-2xl p-6">
+            <div className="clay-card rounded-2xl p-6">
               <h3 className="font-display font-bold text-text-primary mb-4 flex items-center gap-2">
                 <Clock className="w-5 h-5 text-primary-light" />
                 Upcoming Auctions

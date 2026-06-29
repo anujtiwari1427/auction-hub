@@ -1058,7 +1058,7 @@ export const properties: Property[] = [
     id: 'prop-015',
     title: 'Showroom Space on FC Road, Pune',
     slug: 'showroom-space-fc-road-pune',
-    description: 'Prime showroom space on Fergusson College Road — Pune\'s most premium commercial strip. Double-height glass frontage with excellent visibility. Currently vacant and ready for immediate occupation.',
+    description: 'Prime showroom space on Fergusson College Road — Pune\'s most premium commercial strip. Double-height clay-panel frontage with excellent visibility. Currently vacant and ready for immediate occupation.',
     aiSummary: 'FC Road is Pune\'s Oxford Street. Showroom spaces here rarely come to auction. At 20% below market, this is a strategic acquisition. Annual rental of ₹18L+ makes it a strong passive income generator.',
     propertyType: 'Commercial',
     subType: 'Showroom',
